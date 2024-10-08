@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Levels Overview</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Water Levels Overview</h1>
+        </header>
+        <p class="description">
+            Monitoring water levels is crucial for predicting and managing natural events such as floods and droughts. This page provides real-time data and forecasts on water levels, rainfall, and the likelihood of floods and droughts. Stay informed and prepared by regularly checking the updates provided here.-
+        </p>
+        <section class="soil-properties" style="margin-top: 10px;">
+            <h2 style="margin-bottom: 20px;">Water Level</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3 class="card-h3">Flood Chances</h3>
+                    <p>75%</p>
+                    <img src="wgraph1.png" alt="">
+                    <span class="arrow-icon">&gt;&gt;</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-h3">Drought Chances</h3>
+                    <p>25%</p>
+                    <img src="wgraph2.png" alt="">
+                    <span class="arrow-icon">&gt;&gt;</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-h3">Rain Fall</h3>
+                    <p>50 mm</p>
+                    <img src="wgraph3.png" alt="">
+                    <span class="arrow-icon">&gt;&gt;</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+
+<style>
+    /* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: #f6f8fa;
+}
+
+/* Container for the entire content */
+.container {
+    width: 90%; 
+    padding: 20px;
+    margin-left: 50px;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header h1
+{
+    font-family: Fjalla One;
+    font-size: 40px;
+    font-weight: 600;
+}
+.back-icon {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 32px;
+    color: #333;
+}
+
+/* Paragraph description below the title */
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Section heading */
+.soil-properties h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* Cards container */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card-h3
+{
+    font-size: 27px;
+    font-family: Abel;
+}
+/* Individual card styles */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    height: 25rem;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.card:hover
+{
+    box-shadow: 0 0 20px rgb(63, 200, 29)
+}
+.card img
+{
+    width: 21rem;
+    padding-top: 50px;
+    margin-left: 25px;
+}
+}
+.card h3 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 
+    Abel;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Arrow icon inside the card */
+.arrow-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+</style>
